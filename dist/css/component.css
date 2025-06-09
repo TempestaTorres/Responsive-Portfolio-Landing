@@ -1053,6 +1053,11 @@
     font-size: 4rem;
     line-height: 5rem;
 }
+/* 80px */
+.text-8 {
+    font-size: 5rem;
+    line-height: 6.375rem;
+}
 /* 120px */
 .text-10xl {
     font-size: 7.5rem;
