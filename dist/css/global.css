@@ -3,12 +3,12 @@
     src: url('../assets/fonts/Roboto-Regular.ttf');
 }
 @font-face {
-    font-family: 'Lora', sans-serif;
+    font-family: 'Lora', serif;
     src: url('../assets/fonts/Lora-Regular.ttf');
 }
 :root {
     --font-family: 'Roboto', sans-serif;
-    --font-family-secondary: 'Lora', sans-serif;
+    --font-family-secondary: 'Lora', serif;
     --font-size-primary: 13px;
     --color-primary: #574E56;
     --color-secondary: #fff;
@@ -30,7 +30,7 @@
     font-family: var(--font-family), 'sans-serif';
 }
 .font-secondary {
-    font-family: var(--font-family-secondary), 'sans-serif';
+    font-family: var(--font-family-secondary), 'serif';
 }
 .text-primary {
     color: var(--color-primary);
