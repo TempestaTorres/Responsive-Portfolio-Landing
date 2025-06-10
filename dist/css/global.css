@@ -10,15 +10,17 @@
     --font-family: 'Roboto';
     --font-family-secondary: 'Lora';
     --font-size-primary: 13px;
-    --color-primary: #574E56;
+    --color-primary: #574e56;
     --color-secondary: #fff;
     --color-numbers: #f6d5a7;
     --color-placeholder: #aca9a9;
     --color-hover: #f1971b;
-    --bg-primary: #fff;
+    --bg-primary:  #ece4cc;
     --bg-secondary:  #574e56;
     --bg-hero: #f9f8f6;
     --bg-button: #f6d5a7;
+    --bg-slider: #f6d5a7;
+    --bg-section:  #f0e9d6 ;
 }
 
 .bg-transparent {

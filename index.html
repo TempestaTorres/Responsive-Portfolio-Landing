@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="./dist/css/owl.carousel.min.css">
     <link rel="stylesheet" href="./dist/css/base.css">
     <link rel="stylesheet" href="./dist/css/component.css">
     <link rel="stylesheet" href="./dist/css/effects.css">
     <link rel="stylesheet" href="./dist/css/global.css">
     <link rel="stylesheet" href="./dist/css/app.css">
+    <script src="./dist/scripts/jquery-3.7.1.min.js"></script>
+    <script src="./dist/scripts/owl.carousel.min.js"></script>
+    <script src="./dist/scripts/app.js"></script>
 </head>
 <body class="primary">
     <div class="flex flex-col min-h-screen">
@@ -36,7 +40,7 @@
                                 <p class="hero-subtitle mt-9"><span>ДИЗАЙНЕР-ИНТЕРЬЕРА</span></p>
                             </div>
                             <div class="hero-footer flex items-center gap-16">
-                                <div class="start-video flex-row-container relative transition">
+                                <div class="start-video rounded flex-row-container relative transition">
                                     <img class="transition-all-500 rounded" src="./dist/assets/images/thumbnail1.png" alt="presentation" loading="lazy">
                                     <!--    Button   -->
                                     <a href="#" class="rounded-btn bg-button rounded-full flex-row-container transition-all-500 absolute">
@@ -49,6 +53,45 @@
                                 <div class="presentation-prompt">
                                     <span class="line text-sm font-s-medium color-black">Смотреть</span>
                                     <p class="line text-sm font-s-medium color-black">видео-презентацию</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  Column Slider  -->
+                        <div class="slider-container relative">
+                            <div class="slider owl-carousel">
+                                <div class="flex-row-container">
+                                    <img class="slide-img" src="./dist/assets/images/slide-main.jpg" alt="">
+                                </div>
+                                <div class="flex-row-container">
+                                    <img class="slide-img" src="./dist/assets/images/1.jpg" alt="">
+                                </div>
+                                <div class="flex-row-container">
+                                    <img class="slide-img" src="./dist/assets/images/2.jpg" alt="">
+                                </div>
+                                <div class="flex-row-container">
+                                    <img class="slide-img" src="./dist/assets/images/3.jpg" alt="">
+                                </div>
+                                <div class="flex-row-container">
+                                    <img class="slide-img" src="./dist/assets/images/4.jpg" alt="">
+                                </div>
+                                <div class="flex-row-container">
+                                    <img class="slide-img" src="./dist/assets/images/5.jpg" alt="">
+                                </div>
+                                <div class="flex-row-container">
+                                    <img class="slide-img" src="./dist/assets/images/6.jpg" alt="">
+                                </div>
+                            </div>
+                            <!--  Slider Buttons   -->
+                            <div class="slider-group-buttons flex gap-3-xx absolute">
+                                <div class="slider-button prev flex-row-container">
+                                    <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.0319231 7.53189L11.123 0.871973L11.3451 13.8071L0.0319231 7.53189Z" fill="white" />
+                                    </svg>
+                                </div>
+                                <div class="slider-button next flex-row-container">
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.9692 6.46914L0.792378 12.9841L0.738671 0.0471869L11.9692 6.46914Z" fill="white" />
+                                    </svg>
                                 </div>
                             </div>
                         </div>
