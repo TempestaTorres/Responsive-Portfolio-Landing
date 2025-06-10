@@ -1,4 +1,7 @@
 
+.nav {
+    margin-left: 1rem;
+}
 .nav__links-link {
     letter-spacing: 0.06em;
 }
@@ -26,9 +29,10 @@
 }
 .hero-container {
     background-color: var(--bg-section);
+    padding-left: 1rem;
+    padding-bottom: 1rem;
 }
 .hero-card {
-    padding: 0 1rem;
     gap: 7.938rem;
     align-self: end;
     /*background-color: var(--bg-section);*/
@@ -40,6 +44,7 @@
     width: 78px;
     height: 78px;
     left: 84%;
+    border:3px solid var(--bg-button);
 }
 
 .start-video:hover {
@@ -53,7 +58,7 @@
 }
 .slider-container {
     max-width: 43.125rem; /*690px*/
-    height: 802px;
+    height: 800px;
     background-color: var(--bg-section);
     box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.5);
 }

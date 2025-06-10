@@ -635,6 +635,10 @@
 .pt-16 {
     padding-top: 4rem;
 }
+/* 88px */
+.pt-22 {
+    padding-top: 5.5rem;
+}
 /* 110px */
 .pt-27 {
     padding-top: 6.875rem;
@@ -1045,8 +1049,13 @@
     font-size: 2.25rem;
     line-height: 2.5rem;
 }
+/* 40px */
+.text-5xl {
+    font-size: 2.5rem;
+    line-height: 3.188rem;
+}
 /* 45px */
-.text-4xxl {
+.text-5xxl {
     font-size: 2.813rem;
     line-height: 3.313rem;
 }
