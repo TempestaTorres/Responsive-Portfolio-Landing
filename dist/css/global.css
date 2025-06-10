@@ -14,17 +14,27 @@
     --color-secondary: #fff;
     --color-numbers: #f6d5a7;
     --color-placeholder: #aca9a9;
+    --color-hover: #f1971b;
     --bg-primary: #fff;
     --bg-secondary:  #574e56;
     --bg-hero: #f9f8f6;
     --bg-button: #f6d5a7;
 }
 
+.bg-transparent {
+    background-color: transparent;
+}
 .bg-primary {
     background-color: var(--bg-primary);
 }
 .bg-secondary {
     background-color: var(--bg-secondary);
+}
+.bg-hero {
+    background-color: var(--bg-hero);
+}
+.bg-button {
+    background-color: var(--bg-button);
 }
 .font-primary {
     font-family: var(--font-family), 'sans-serif';
@@ -48,5 +58,9 @@
     background-color: var(--bg-primary);
     font-family: var(--font-family), 'sans-serif';
     font-size: var(--font-size-primary);
+    line-height: 0.938rem;                  /* 15px */
     color: var(--color-primary);
+}
+.color-black {
+    color: #000;
 }

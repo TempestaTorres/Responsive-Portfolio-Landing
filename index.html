@@ -12,7 +12,50 @@
 </head>
 <body class="primary">
     <div class="flex flex-col min-h-screen">
-        <h1 class="font-secondary font-s-medium text-8">Test My Font</h1>
+        <header class="header bg-transparent w-full fixed top-0 z-50 py-7">
+            <div class="container">
+                <!--   Nav Bar   -->
+                <nav class="nav">
+                    <ul class="nav__links items-center gap-9">
+                        <li class="link transition hv-drop-shadow"><a href="#about">ОБО МНЕ</a></li>
+                        <li class="link transition hv-drop-shadow"><a href="#portfolio">ПОРТФОЛИО</a></li>
+                        <li class="link transition hv-drop-shadow"><a href="#contacts">КОНТАКТЫ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <!--   Section Hero     -->
+            <section id="hero" class="min-h-screen pt-27">
+                <div class="container">
+                    <div class="hero-container grid grid-cols-2">
+                        <!--  Column Hero Card   -->
+                        <div class="hero-card flex flex-col">
+                            <div class="hero-main">
+                                <h1 class="hero-title font-secondary text-8 font-s-medium">Екатерина Мелисова</h1>
+                                <p class="hero-subtitle mt-9"><span>ДИЗАЙНЕР-ИНТЕРЬЕРА</span></p>
+                            </div>
+                            <div class="hero-footer flex items-center gap-16">
+                                <div class="start-video flex-row-container relative transition">
+                                    <img class="transition-all-500 rounded" src="./dist/assets/images/thumbnail1.png" alt="presentation" loading="lazy">
+                                    <!--    Button   -->
+                                    <a href="#" class="rounded-btn bg-button rounded-full flex-row-container transition-all-500 absolute">
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.9692 6.46914L0.792378 12.9841L0.738671 0.0471869L11.9692 6.46914Z" fill="white" />
+                                        </svg>
+                                    </a>
+                                </div>
+
+                                <div class="presentation-prompt">
+                                    <span class="line text-sm font-s-medium color-black">Смотреть</span>
+                                    <p class="line text-sm font-s-medium color-black">видео-презентацию</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
 </body>
 </html>

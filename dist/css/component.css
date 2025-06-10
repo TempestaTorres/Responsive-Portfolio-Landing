@@ -1,6 +1,6 @@
 :root {
     --radius: .5rem;
-    --max-width: 1400px;
+    --max-width: 1200px;
 }
 .container {
     max-width: calc(var(--max-width) + 32px);
@@ -11,7 +11,6 @@
 .hero {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     overflow: hidden;
 }
 .content {
@@ -292,6 +291,10 @@
 }
 .mt-8 {
     margin-top: 2rem;
+}
+/* 36px */
+.mt-9 {
+    margin-top: 2.25rem;
 }
 .mt-12 {
     margin-top: 3rem;
@@ -640,6 +643,10 @@
 .pt-30 {
     padding-top: 7.5rem;
 }
+/* 190px */
+.pt-90 {
+    padding-top: 11.875rem;
+}
 .py-1 {
     padding-top: .25rem;
     padding-bottom: .25rem;
@@ -863,7 +870,7 @@
 .transition {
     transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
     transition-timing-function: cubic-bezier(.4, 0, .2, 1);
-    transition-duration: .3s;
+    transition-duration: .4s;
 }
 .transition-color {
     transition-property: color;
@@ -877,7 +884,7 @@
 .transition-all {
     transition-property: all;
     transition-timing-function: cubic-bezier(.4, 0, .2, 1);
-    transition-duration: .3s;
+    transition-duration: .4s;
 }
 .transition-all-500 {
     transition-property: all;
