@@ -299,6 +299,10 @@
 .mt-12 {
     margin-top: 3rem;
 }
+/* 50px */
+.mt-12x {
+    margin-top: 3.125rem;
+}
 /* 120px */
 .mt-120 {
     margin-top: 7.5rem;

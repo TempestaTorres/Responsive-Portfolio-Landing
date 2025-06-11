@@ -25,4 +25,19 @@ $(document).ready(function(){
 
         e.stopPropagation();
     });
+
+    //     Gallery
+    Fancybox.bind("[data-fancybox]", {
+        Thumbs: {
+            type: "modern",
+        },
+        Toolbar: {
+            display: {
+                left: ["infobar"],
+                middle: ["zoomIn", "zoomOut"],
+                right: [ "slideshow", "thumbs","close"],
+            },
+        },
+    });
+
 });
