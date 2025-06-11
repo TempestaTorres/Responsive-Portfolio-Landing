@@ -45,6 +45,7 @@
     height: 78px;
     left: 84%;
     border:3px solid var(--bg-button);
+    animation: 1.6s playShadow ease-out infinite;
 }
 
 .start-video:hover {
