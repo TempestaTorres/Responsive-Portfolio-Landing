@@ -3,6 +3,10 @@ $(document).ready(function(){
     const owl = $('.owl-carousel');
     const prev = $('.slider-button.prev');
     const next = $('.slider-button.next');
+    const statistics = document.querySelector('.statistics');
+    const numbers = $('.number');
+
+    let show = true;
 
     owl.owlCarousel({
         loop:true,
@@ -39,5 +43,24 @@ $(document).ready(function(){
             },
         },
     });
+    // Spin numbers
+    $(window).on('scroll', (e) => {
 
+        if (isPartiallyVisible(statistics) && show){
+
+            show = false;
+
+            numbers.css('opacity', '1');
+            numbers.spincrement({
+                thousandSeparator: "",
+                duration: 2000
+            });
+        }
+
+        if (!isPartiallyVisible(statistics)) {
+            numbers.css('opacity', '0');
+            show = true;
+        }
+
+    });
 });
