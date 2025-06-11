@@ -17,127 +17,177 @@
     <script src="./dist/scripts/app.js"></script>
 </head>
 <body class="primary">
-    <div class="flex flex-col min-h-screen">
-        <header class="header bg-transparent w-full fixed top-0 z-50 py-7">
+<div class="flex flex-col min-h-screen">
+    <header class="header bg-transparent w-full fixed top-0 z-50 py-7">
+        <div class="container">
+            <!--   Nav Bar   -->
+            <nav class="nav">
+                <ul class="nav__links items-center gap-9">
+                    <li class="link transition hv-drop-shadow"><a href="#about">ОБО МНЕ</a></li>
+                    <li class="link transition hv-drop-shadow"><a href="#portfolio">ПОРТФОЛИО</a></li>
+                    <li class="link transition hv-drop-shadow"><a href="#contacts">КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!--   Section Hero     -->
+        <section id="hero" class="min-h-screen pt-27">
             <div class="container">
-                <!--   Nav Bar   -->
-                <nav class="nav">
-                    <ul class="nav__links items-center gap-9">
-                        <li class="link transition hv-drop-shadow"><a href="#about">ОБО МНЕ</a></li>
-                        <li class="link transition hv-drop-shadow"><a href="#portfolio">ПОРТФОЛИО</a></li>
-                        <li class="link transition hv-drop-shadow"><a href="#contacts">КОНТАКТЫ</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <main>
-            <!--   Section Hero     -->
-            <section id="hero" class="min-h-screen pt-27">
-                <div class="container">
-                    <div class="hero-container grid grid-cols-2">
-                        <!--  Column Hero Card   -->
-                        <div class="hero-card flex flex-col">
-                            <div class="hero-main">
-                                <h1 class="title font-secondary text-8 font-s-medium">Екатерина Мелисова</h1>
-                                <p class="subtitle mt-9"><span>ДИЗАЙНЕР-ИНТЕРЬЕРА</span></p>
+                <div class="hero-container grid grid-cols-2">
+                    <!--  Column Hero Card   -->
+                    <div class="hero-card flex flex-col">
+                        <div class="hero-main">
+                            <h1 class="title font-secondary text-8 font-s-medium">Екатерина Мелисова</h1>
+                            <p class="subtitle mt-9"><span>ДИЗАЙНЕР-ИНТЕРЬЕРА</span></p>
+                        </div>
+                        <div class="hero-footer flex items-center gap-16">
+                            <div class="start-video rounded flex-row-container relative transition">
+                                <img class="transition-all-500 rounded" src="./dist/assets/images/thumbnail1.png"
+                                     alt="presentation" loading="lazy">
+                                <!--    Button   -->
+                                <a href="#"
+                                   class="rounded-btn bg-button rounded-full flex-row-container transition-all-500 absolute">
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.9692 6.46914L0.792378 12.9841L0.738671 0.0471869L11.9692 6.46914Z"
+                                              fill="white"/>
+                                    </svg>
+                                </a>
                             </div>
-                            <div class="hero-footer flex items-center gap-16">
-                                <div class="start-video rounded flex-row-container relative transition">
-                                    <img class="transition-all-500 rounded" src="./dist/assets/images/thumbnail1.png" alt="presentation" loading="lazy">
-                                    <!--    Button   -->
-                                    <a href="#" class="rounded-btn bg-button rounded-full flex-row-container transition-all-500 absolute">
-                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M11.9692 6.46914L0.792378 12.9841L0.738671 0.0471869L11.9692 6.46914Z" fill="white" />
-                                        </svg>
-                                    </a>
-                                </div>
 
-                                <div class="presentation-prompt">
-                                    <span class="line text-sm font-s-medium color-black">Смотреть</span>
-                                    <p class="line text-sm font-s-medium color-black">видео-презентацию</p>
-                                </div>
+                            <div class="presentation-prompt">
+                                <span class="line text-sm font-s-medium color-black">Смотреть</span>
+                                <p class="line text-sm font-s-medium color-black">видео-презентацию</p>
                             </div>
                         </div>
-                        <!--  Column Slider  -->
-                        <div class="slider-container relative">
-                            <div class="slider owl-carousel">
-                                <div class="flex-row-container">
-                                    <img class="slide-img" src="./dist/assets/images/slide-main.jpg" alt="">
-                                </div>
-                                <div class="flex-row-container">
-                                    <img class="slide-img" src="./dist/assets/images/1.jpg" alt="">
-                                </div>
-                                <div class="flex-row-container">
-                                    <img class="slide-img" src="./dist/assets/images/2.jpg" alt="">
-                                </div>
-                                <div class="flex-row-container">
-                                    <img class="slide-img" src="./dist/assets/images/3.jpg" alt="">
-                                </div>
-                                <div class="flex-row-container">
-                                    <img class="slide-img" src="./dist/assets/images/4.jpg" alt="">
-                                </div>
-                                <div class="flex-row-container">
-                                    <img class="slide-img" src="./dist/assets/images/5.jpg" alt="">
-                                </div>
-                                <div class="flex-row-container">
-                                    <img class="slide-img" src="./dist/assets/images/6.jpg" alt="">
-                                </div>
+                    </div>
+                    <!--  Column Slider  -->
+                    <div class="slider-container relative">
+                        <div class="slider owl-carousel">
+                            <div class="flex-row-container">
+                                <img class="slide-img" src="./dist/assets/images/slide-main.jpg" alt="">
                             </div>
-                            <!--  Slider Buttons   -->
-                            <div class="slider-group-buttons flex gap-3-xx absolute">
-                                <div class="slider-button prev flex-row-container">
-                                    <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.0319231 7.53189L11.123 0.871973L11.3451 13.8071L0.0319231 7.53189Z" fill="white" />
-                                    </svg>
+                            <div class="flex-row-container">
+                                <img class="slide-img" src="./dist/assets/images/1.jpg" alt="">
+                            </div>
+                            <div class="flex-row-container">
+                                <img class="slide-img" src="./dist/assets/images/2.jpg" alt="">
+                            </div>
+                            <div class="flex-row-container">
+                                <img class="slide-img" src="./dist/assets/images/3.jpg" alt="">
+                            </div>
+                            <div class="flex-row-container">
+                                <img class="slide-img" src="./dist/assets/images/4.jpg" alt="">
+                            </div>
+                            <div class="flex-row-container">
+                                <img class="slide-img" src="./dist/assets/images/5.jpg" alt="">
+                            </div>
+                            <div class="flex-row-container">
+                                <img class="slide-img" src="./dist/assets/images/6.jpg" alt="">
+                            </div>
+                        </div>
+                        <!--  Slider Buttons   -->
+                        <div class="slider-group-buttons flex gap-3-xx absolute">
+                            <div class="slider-button prev flex-row-container">
+                                <svg width="12" height="14" viewBox="0 0 12 14" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.0319231 7.53189L11.123 0.871973L11.3451 13.8071L0.0319231 7.53189Z"
+                                          fill="white"/>
+                                </svg>
+                            </div>
+                            <div class="slider-button next flex-row-container">
+                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.9692 6.46914L0.792378 12.9841L0.738671 0.0471869L11.9692 6.46914Z"
+                                          fill="white"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  Section Portfolio   -->
+        <section id="portfolio" class="pt-22">
+            <div class="container">
+                <div class="portfolio-container">
+                    <h2 class="title pt-2 font-secondary text-5xl font-s-medium">Портфолио</h2>
+                    <div class="portfolio-content mt-12 flex flex-wrap gap-5">
+                        <figure class="hvr-glow" data-src="./dist/assets/images/11.jpg" data-fancybox="gallery">
+                            <img class="transition-all" src="./dist/assets/images/1.jpg" alt="project one">
+                        </figure>
+                        <figure class="hvr-glow" data-src="./dist/assets/images/22.jpg" data-fancybox="gallery">
+                            <img class="transition-all" src="./dist/assets/images/2.jpg" alt="project two">
+                        </figure>
+                        <figure class="hvr-glow" data-src="./dist/assets/images/33.jpg" data-fancybox="gallery">
+                            <img class="transition-all" src="./dist/assets/images/3.jpg" alt="project three">
+                        </figure>
+                        <figure class="hvr-glow" data-src="./dist/assets/images/44.jpg" data-fancybox="gallery">
+                            <img class="transition-all" src="./dist/assets/images/4.jpg" alt="project fore">
+                        </figure>
+                        <figure class="hvr-glow" data-src="./dist/assets/images/55.jpg" data-fancybox="gallery">
+                            <img class="transition-all" src="./dist/assets/images/5.jpg" alt="project five">
+                        </figure>
+                        <figure class="hvr-glow" data-src="./dist/assets/images/66.jpg" data-fancybox="gallery">
+                            <img class="transition-all" src="./dist/assets/images/6.jpg" alt="project six">
+                        </figure>
+                        <figure class="hvr-glow" data-src="./dist/assets/images/77.jpg" data-fancybox="gallery">
+                            <img class="transition-all" src="./dist/assets/images/7.jpg" alt="project seven">
+                        </figure>
+                        <figure class="hvr-glow" data-src="./dist/assets/images/88.jpg" data-fancybox="gallery">
+                            <img class="transition-all" src="./dist/assets/images/8.jpg" alt="project eight">
+                        </figure>
+                        <figure class="hvr-glow" data-src="./dist/assets/images/99.jpg" data-fancybox="gallery">
+                            <img class="transition-all" src="./dist/assets/images/9.jpg" alt="project nine">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  Section About   -->
+        <section id="about" class="pt-24">
+            <div class="container">
+                <div class="about-container bg-secondary">
+                    <h2 class="title py-25 text-secondary font-secondary text-5xl font-s-medium">Обо мне</h2>
+                    <!--  Content   -->
+                    <div class="pb-80">
+                        <div class="about-main flex items-center flex-wrap gap-30 shadow-sm rounded">
+                            <div class="about__img">
+                                <img class="rounded" src="./dist/assets/images/author.jpg" alt="i am">
+                            </div>
+                            <div class="about-content">
+                                <div class="about-subtitle space-y-6">
+                                    <p class="text-secondary font-s-medium text-sm">
+                                        Более 20-ти лет активной работы дизайнером интерьера позволили мне накопить
+                                        ценнейшие опыт и знания для создания роскошных и респектабельных интерьеров,
+                                        отвечающих всем требованиям даже самого взыскательного Заказчика, превращая его
+                                        неясные фантазии и желания в настоящие эксклюзивные интерьеры любой сложности, в
+                                        различных стилистических направлениях.
+                                    </p>
+                                    <p class="text-secondary font-s-medium text-sm">
+                                        Моё творческое кредо в профессии: «Дизайнера
+                                        в проекте должно быть как можно меньше, а самая важная деталь при создании интерьера
+                                        — это идея и искреннее отношение к проекту и заказчику».
+                                    </p>
                                 </div>
-                                <div class="slider-button next flex-row-container">
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M11.9692 6.46914L0.792378 12.9841L0.738671 0.0471869L11.9692 6.46914Z" fill="white" />
-                                    </svg>
+                                <div class="statistics mt-9 flex items-center">
+                                    <div class="statistics-item">
+                                        <p class="number font-secondary text-number text-10">20</p>
+                                        <span class="text-secondary font-s-medium text-sm">Лет опыта</span>
+                                    </div>
+                                    <div class="statistics-item">
+                                        <p class="number font-secondary text-number text-10">300</p>
+                                        <span class="text-secondary font-s-medium text-sm">Реализованных проектов</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!--  Section Portfolio   -->
-            <section id="portfolio" class="pt-22">
-                <div class="container">
-                    <div class="portfolio-container">
-                        <h2 class="title pt-2 font-secondary text-5xl font-s-medium">Портфолио</h2>
-                        <div class="portfolio-content mt-12 flex flex-wrap gap-5">
-                            <figure class="hvr-glow" data-src="./dist/assets/images/11.jpg" data-fancybox="gallery">
-                                <img class="transition-all" src="./dist/assets/images/1.jpg" alt="project one">
-                            </figure>
-                            <figure class="hvr-glow" data-src="./dist/assets/images/22.jpg" data-fancybox="gallery">
-                                <img class="transition-all" src="./dist/assets/images/2.jpg" alt="project two">
-                            </figure>
-                            <figure class="hvr-glow" data-src="./dist/assets/images/33.jpg" data-fancybox="gallery">
-                                <img class="transition-all" src="./dist/assets/images/3.jpg" alt="project three">
-                            </figure>
-                            <figure class="hvr-glow" data-src="./dist/assets/images/44.jpg" data-fancybox="gallery">
-                                <img class="transition-all" src="./dist/assets/images/4.jpg" alt="project fore">
-                            </figure>
-                            <figure class="hvr-glow" data-src="./dist/assets/images/55.jpg" data-fancybox="gallery">
-                                <img class="transition-all" src="./dist/assets/images/5.jpg" alt="project five">
-                            </figure>
-                            <figure class="hvr-glow" data-src="./dist/assets/images/66.jpg" data-fancybox="gallery">
-                                <img class="transition-all" src="./dist/assets/images/6.jpg" alt="project six">
-                            </figure>
-                            <figure class="hvr-glow" data-src="./dist/assets/images/77.jpg" data-fancybox="gallery">
-                                <img class="transition-all" src="./dist/assets/images/7.jpg" alt="project seven">
-                            </figure>
-                            <figure class="hvr-glow" data-src="./dist/assets/images/88.jpg" data-fancybox="gallery">
-                                <img class="transition-all" src="./dist/assets/images/8.jpg" alt="project eight">
-                            </figure>
-                            <figure class="hvr-glow" data-src="./dist/assets/images/99.jpg" data-fancybox="gallery">
-                                <img class="transition-all" src="./dist/assets/images/9.jpg" alt="project nine">
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-    </div>
+            </div>
+        </section>
+    </main>
+</div>
 </body>
 </html>

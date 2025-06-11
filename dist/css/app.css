@@ -125,3 +125,23 @@ figure {
         height: 100%;
     }
 }
+/* About */
+.about-container {
+    padding: 0 1rem 1rem 1rem;
+}
+.about__img {
+    width: 500px;
+    height: 535px;
+    overflow: hidden;
+
+    & img {
+        width: 100%;
+        height: auto;
+    }
+}
+.about-subtitle {
+    max-width: 456px;
+}
+.statistics {
+    gap: 3.625rem;
+}
