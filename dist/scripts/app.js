@@ -5,6 +5,7 @@ $(document).ready(function(){
     const next = $('.slider-button.next');
     const statistics = document.querySelector('.statistics');
     const numbers = $('.number');
+    const form = document.querySelector('#form');
 
     let show = true;
 
@@ -63,4 +64,6 @@ $(document).ready(function(){
         }
 
     });
+    // Form
+    validateForm(form);
 });

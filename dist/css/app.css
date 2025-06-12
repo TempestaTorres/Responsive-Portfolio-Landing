@@ -27,7 +27,7 @@
 .link:hover::before {
     transform: scaleX(1);
 }
-.hero-container, .portfolio-container {
+.hero-container, .portfolio-container, .contacts-container {
     background-color: var(--bg-section);
     padding-left: 1rem;
     padding-bottom: 1rem;
@@ -126,7 +126,7 @@ figure {
     }
 }
 /* About */
-.about-container {
+.about-container, .contacts-container {
     padding: 0 1rem 1rem 1rem;
 }
 .about__img {
@@ -144,4 +144,31 @@ figure {
 }
 .statistics {
     gap: 3.625rem;
+}
+/* Contacts */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 500px 1fr 1fr;
+    gap: 90px;
+}
+input:invalid:required, textarea:invalid:required {
+    border-color: transparent;
+    outline: 0.01rem solid rgb(239 68 68 / 1);
+}
+button[type="submit"] {
+    background-color: var(--bg-button);
+    border: 1px solid rgba(221, 221, 221, 0);
+    width: 235px;
+    height: 60px;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--color-hover);
+}
+
+.links-info {
+    gap: 3px;
+}
+.social-links-grid {
+    row-gap: 60px;
 }
