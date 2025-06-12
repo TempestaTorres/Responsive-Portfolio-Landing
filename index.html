@@ -4,13 +4,331 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="./dist/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./dist/css/fancybox.css">
     <link rel="stylesheet" href="./dist/css/base.css">
     <link rel="stylesheet" href="./dist/css/component.css">
     <link rel="stylesheet" href="./dist/css/effects.css">
     <link rel="stylesheet" href="./dist/css/global.css">
     <link rel="stylesheet" href="./dist/css/app.css">
+    <link rel="stylesheet" href="./dist/css/responsive.css">
+    <script src="./dist/scripts/jquery-3.7.1.min.js"></script>
+    <script src="./dist/scripts/owl.carousel.min.js"></script>
+    <script src="./dist/scripts/fancybox.umd.js"></script>
+    <script src="./dist/scripts/jquery.spincrement.min.js"></script>
+    <script src="./dist/scripts/scrollApi.js"></script>
+    <script src="./dist/scripts/form.validate.js"></script>
+    <script src="./dist/scripts/app.js"></script>
 </head>
 <body class="primary">
+<div class="flex flex-col min-h-screen">
+    <header class="header bg-transparent w-full fixed top-0 z-50 py-7">
+        <div class="container">
+            <!--   Nav Bar   -->
+            <nav class="nav">
+                <ul class="nav__links items-center gap-9">
+                    <li class="link transition"><a href="#about">ОБО МНЕ</a></li>
+                    <li class="link transition"><a href="#portfolio">ПОРТФОЛИО</a></li>
+                    <li class="link transition"><a href="#contacts">КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!--   Section Hero     -->
+        <section id="hero" class="min-h-screen pt-27">
+            <div class="container">
+                <div class="hero-container grid grid-cols-2">
+                    <!--  Column Hero Card   -->
+                    <div class="hero-card flex flex-col">
+                        <div class="hero-main">
+                            <h1 class="title font-secondary text-8 font-s-medium">Екатерина Мелисова</h1>
+                            <p class="subtitle mt-9"><span>ДИЗАЙНЕР-ИНТЕРЬЕРА</span></p>
+                        </div>
+                        <div class="hero-footer flex items-center gap-16">
+                            <div class="start-video rounded flex-row-container relative transition">
+                                <img class="transition-all-500 rounded" src="./dist/assets/images/thumbnail1.png"
+                                     alt="presentation" loading="lazy">
+                                <!--    Button   -->
+                                <a href="#"
+                                   class="rounded-btn bg-button rounded-full flex-row-container transition-all-500 absolute">
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.9692 6.46914L0.792378 12.9841L0.738671 0.0471869L11.9692 6.46914Z"
+                                              fill="white"/>
+                                    </svg>
+                                </a>
+                            </div>
 
+                            <div class="presentation-prompt">
+                                <span class="line text-sm font-s-medium color-black">Смотреть</span>
+                                <p class="line text-sm font-s-medium color-black">видео-презентацию</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  Column Slider  -->
+                    <div class="slider-container relative">
+                        <div class="slider owl-carousel">
+                            <div class="flex-row-container">
+                                <img class="slide-img" src="./dist/assets/images/slide-main.jpg" alt="">
+                            </div>
+                            <div class="flex-row-container">
+                                <img class="slide-img" src="./dist/assets/images/1.jpg" alt="">
+                            </div>
+                            <div class="flex-row-container">
+                                <img class="slide-img" src="./dist/assets/images/2.jpg" alt="">
+                            </div>
+                            <div class="flex-row-container">
+                                <img class="slide-img" src="./dist/assets/images/3.jpg" alt="">
+                            </div>
+                            <div class="flex-row-container">
+                                <img class="slide-img" src="./dist/assets/images/4.jpg" alt="">
+                            </div>
+                            <div class="flex-row-container">
+                                <img class="slide-img" src="./dist/assets/images/5.jpg" alt="">
+                            </div>
+                            <div class="flex-row-container">
+                                <img class="slide-img" src="./dist/assets/images/6.jpg" alt="">
+                            </div>
+                        </div>
+                        <!--  Slider Buttons   -->
+                        <div class="slider-group-buttons flex gap-3-xx absolute">
+                            <div class="slider-button prev flex-row-container">
+                                <svg width="12" height="14" viewBox="0 0 12 14" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.0319231 7.53189L11.123 0.871973L11.3451 13.8071L0.0319231 7.53189Z"
+                                          fill="white"/>
+                                </svg>
+                            </div>
+                            <div class="slider-button next flex-row-container">
+                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.9692 6.46914L0.792378 12.9841L0.738671 0.0471869L11.9692 6.46914Z"
+                                          fill="white"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  Section Portfolio   -->
+        <section id="portfolio" class="pt-22">
+            <div class="container">
+                <div class="portfolio-container">
+                    <h2 class="title pt-2 font-secondary text-5xl font-s-medium">Портфолио</h2>
+                    <div class="portfolio-content mt-12 flex flex-wrap gap-5">
+                        <figure class="hvr-glow" data-src="./dist/assets/images/11.jpg" data-fancybox="gallery">
+                            <img class="transition-all" src="./dist/assets/images/1.jpg" alt="project one">
+                        </figure>
+                        <figure class="hvr-glow" data-src="./dist/assets/images/22.jpg" data-fancybox="gallery">
+                            <img class="transition-all" src="./dist/assets/images/2.jpg" alt="project two">
+                        </figure>
+                        <figure class="hvr-glow" data-src="./dist/assets/images/33.jpg" data-fancybox="gallery">
+                            <img class="transition-all" src="./dist/assets/images/3.jpg" alt="project three">
+                        </figure>
+                        <figure class="hvr-glow" data-src="./dist/assets/images/44.jpg" data-fancybox="gallery">
+                            <img class="transition-all" src="./dist/assets/images/4.jpg" alt="project fore">
+                        </figure>
+                        <figure class="hvr-glow" data-src="./dist/assets/images/55.jpg" data-fancybox="gallery">
+                            <img class="transition-all" src="./dist/assets/images/5.jpg" alt="project five">
+                        </figure>
+                        <figure class="hvr-glow" data-src="./dist/assets/images/66.jpg" data-fancybox="gallery">
+                            <img class="transition-all" src="./dist/assets/images/6.jpg" alt="project six">
+                        </figure>
+                        <figure class="hvr-glow" data-src="./dist/assets/images/77.jpg" data-fancybox="gallery">
+                            <img class="transition-all" src="./dist/assets/images/7.jpg" alt="project seven">
+                        </figure>
+                        <figure class="hvr-glow" data-src="./dist/assets/images/88.jpg" data-fancybox="gallery">
+                            <img class="transition-all" src="./dist/assets/images/8.jpg" alt="project eight">
+                        </figure>
+                        <figure class="hvr-glow" data-src="./dist/assets/images/99.jpg" data-fancybox="gallery">
+                            <img class="transition-all" src="./dist/assets/images/9.jpg" alt="project nine">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  Section About   -->
+        <section id="about" class="pt-24">
+            <div class="container">
+                <div class="about-container bg-secondary">
+                    <h2 class="title py-25 text-secondary font-secondary text-5xl font-s-medium">Обо мне</h2>
+                    <!--  Content   -->
+                    <div class="pb-80">
+                        <div class="about-main flex items-center flex-wrap gap-30 shadow-sm rounded">
+                            <div class="about__img">
+                                <img class="rounded" src="./dist/assets/images/author.jpg" alt="i am">
+                            </div>
+                            <div class="about-content">
+                                <div class="about-subtitle space-y-6">
+                                    <p class="text-secondary font-s-medium text-sm">
+                                        Более 20-ти лет активной работы дизайнером интерьера позволили мне накопить
+                                        ценнейшие опыт и знания для создания роскошных и респектабельных интерьеров,
+                                        отвечающих всем требованиям даже самого взыскательного Заказчика, превращая его
+                                        неясные фантазии и желания в настоящие эксклюзивные интерьеры любой сложности, в
+                                        различных стилистических направлениях.
+                                    </p>
+                                    <p class="text-secondary font-s-medium text-sm">
+                                        Моё творческое кредо в профессии: «Дизайнера
+                                        в проекте должно быть как можно меньше, а самая важная деталь при создании
+                                        интерьера
+                                        — это идея и искреннее отношение к проекту и заказчику».
+                                    </p>
+                                </div>
+                                <div class="statistics mt-9 flex items-center">
+                                    <div class="statistics-item">
+                                        <p class="number font-secondary text-number text-10">20</p>
+                                        <span class="text-secondary font-s-medium text-sm">Лет опыта</span>
+                                    </div>
+                                    <div class="statistics-item">
+                                        <p class="number font-secondary text-number text-10">300</p>
+                                        <span class="text-secondary font-s-medium text-sm">Реализованных проектов</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  Section Contacts   -->
+        <section id="contacts" class="py-20">
+            <div class="container">
+                <div class="contacts-container">
+                    <h2 class="title py-25 text-primary font-secondary text-5xl font-s-medium">Контакты</h2>
+                    <!--   Contact Grid   -->
+                    <div class="contact-grid pb-20">
+                        <!--  Column 1 Form   -->
+                        <div class="col-span-1">
+                            <div class="rounded-xl bg-card border border-zinc-700 shadow">
+                                <div class="p-6">
+                                    <form id="form" class="space-y-1-5" name="form" novalidate>
+                                        <input id="name"
+                                               class="text-lg w-full px-5 py-5 rounded border border-zinc-700 bg-transparent"
+                                               type="text" minlength="2" placeholder="Ваше имя" name="name" required>
+                                        <p class="text-red-500 text-xs mt-1 h-5"></p>
+                                        <input id="email"
+                                               class="text-lg w-full px-5 py-5 rounded border border-zinc-700 bg-transparent"
+                                               type="email" placeholder="Ваш  E-mail" name="email" required>
+                                        <p class="text-red-500 text-xs mt-1 h-5"></p>
+                                        <textarea id="message"
+                                                  class="text-lg w-full px-5 py-5 resize-none rounded-md border border-zinc-700 bg-transparent"
+                                                  minlength="10" maxlength="140"
+                                                  rows="5" placeholder="Ваше сообщение" name="message"
+                                                  required></textarea>
+                                        <p class="text-red-500 text-xs mt-1 h-5"></p>
+                                        <button class="transition rounded-md" type="submit">ОТПРАВИТЬ</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!--   Column 2 Social links   -->
+                        <div class="col-span-2">
+                            <div class="social-links-grid grid grid-cols-2 p-6">
+                                <!--  Column 1   -->
+                                <div class="social-link-container flex gap-5">
+                                    <div class="link-logo">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.17609 1.322L9.02009 0L13.0611 7.89L10.3371 9.231C9.79909 10.49 12.4961 15.52 13.6341 15.603C13.7241 15.545 16.3051 14.275 16.3051 14.275L20.4151 22.207C20.4151 22.207 17.6511 23.561 17.5611 23.603C9.69909 27.194 -1.54191 5.345 6.17609 1.322ZM8.10509 2.596L7.08209 3.1C1.78809 5.862 11.2591 24.285 16.7301 21.786L17.7011 21.312L15.4301 16.929L14.4041 17.429C11.2411 18.976 6.14209 9.21 9.34909 7.491L10.3561 6.994L8.10509 2.596Z" fill="black" />
+                                        </svg>
+                                    </div>
+                                    <div class="links-info flex flex-col">
+                                        <span class="font-s-medium text-sm text-muted">ТЕЛЕФОН:</span>
+                                        <span class="font-s-medium text-sm text-muted">8 903 438-44-66</span>
+                                    </div>
+                                </div>
+                                <!--  Column 2   -->
+                                <div class="social-link-container flex gap-5">
+                                    <div class="link-logo">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_26_2)">
+                                                <path d="M12 2.163C15.204 2.163 15.584 2.175 16.85 2.233C20.102 2.381 21.621 3.924 21.769 7.152C21.827 8.417 21.838 8.797 21.838 12.001C21.838 15.206 21.826 15.585 21.769 16.85C21.62 20.075 20.105 21.621 16.85 21.769C15.584 21.827 15.206 21.839 12 21.839C8.796 21.839 8.416 21.827 7.151 21.769C3.891 21.62 2.38 20.07 2.232 16.849C2.174 15.584 2.162 15.205 2.162 12C2.162 8.796 2.175 8.417 2.232 7.151C2.381 3.924 3.896 2.38 7.151 2.232C8.417 2.175 8.796 2.163 12 2.163ZM12 0C8.741 0 8.333 0.014 7.053 0.072C2.695 0.272 0.273 2.69 0.073 7.052C0.014 8.333 0 8.741 0 12C0 15.259 0.014 15.668 0.072 16.948C0.272 21.306 2.69 23.728 7.052 23.928C8.333 23.986 8.741 24 12 24C15.259 24 15.668 23.986 16.948 23.928C21.302 23.728 23.73 21.31 23.927 16.948C23.986 15.668 24 15.259 24 12C24 8.741 23.986 8.333 23.928 7.053C23.732 2.699 21.311 0.273 16.949 0.073C15.668 0.014 15.259 0 12 0V0ZM12 5.838C8.597 5.838 5.838 8.597 5.838 12C5.838 15.403 8.597 18.163 12 18.163C15.403 18.163 18.162 15.404 18.162 12C18.162 8.597 15.403 5.838 12 5.838ZM12 16C9.791 16 8 14.21 8 12C8 9.791 9.791 8 12 8C14.209 8 16 9.791 16 12C16 14.21 14.209 16 12 16ZM18.406 4.155C17.61 4.155 16.965 4.8 16.965 5.595C16.965 6.39 17.61 7.035 18.406 7.035C19.201 7.035 19.845 6.39 19.845 5.595C19.845 4.8 19.201 4.155 18.406 4.155Z" fill="black" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_26_2">
+                                                    <rect width="24" height="24" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="links-info flex flex-col">
+                                        <span class="font-s-medium text-sm text-muted">INSTAGRAM:</span>
+                                        <span class="font-s-medium text-sm text-muted">melisova_studio</span>
+                                    </div>
+                                </div>
+                                <!--  Column 3   -->
+                                <div class="social-link-container flex gap-5">
+                                    <div class="link-logo">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_26_4)">
+                                                <path d="M12.042 23.6481C4.229 23.6481 0 18.7721 0 12.4771C0 5.75005 4.762 0.352051 13.276 0.352051C19.49 0.352051 24 4.39005 24 9.95305C24 18.6651 13.67 20.965 14.188 15.9951C13.478 17.1031 12.334 18.3491 10.135 18.3491C7.619 18.3491 6.055 16.507 6.055 13.5421C6.055 9.09805 8.976 5.34305 12.434 5.34305C14.093 5.34305 15.234 6.21905 15.711 7.56405L16.175 5.93205H18.513C18.269 6.76405 16.192 14.4591 16.192 14.4591C15.544 17.125 17.542 17.1721 19.314 15.7561C22.643 13.1761 22.815 6.42905 18.316 3.61505C13.495 0.724051 2.521 2.51305 2.521 12.3081C2.521 17.9191 6.471 21.6891 12.35 21.6891C15.786 21.6891 17.892 20.7591 19.645 19.7411L20.822 21.4391C19.111 22.4051 16.361 23.6481 12.042 23.6481ZM9.698 9.34305C8.983 10.6831 8.521 12.4191 8.521 13.7671C8.521 17.3771 12.043 17.4001 13.773 14.0061C14.485 12.6121 14.944 10.8351 14.944 9.47705C14.944 6.56005 11.449 6.04305 9.698 9.34305Z" fill="#574E56" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_26_4">
+                                                    <rect width="24" height="24" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="links-info flex flex-col">
+                                        <span class="font-s-medium text-sm text-muted">ПОЧТА:</span>
+                                        <span class="font-s-medium text-sm text-muted">Melisova@gmail.com</span>
+                                    </div>
+                                </div>
+                                <!--  Column 4   -->
+                                <div class="social-link-container flex gap-5">
+                                    <div class="link-logo">
+                                        <svg width="24" height="24" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.5 2.75C20.8945 2.75 24.75 6.34975 24.75 10.4528C24.75 14.7056 21.3221 20.2593 16.5 27.8616C11.6779 20.2593 8.25 14.7056 8.25 10.4528C8.25 6.34975 12.1055 2.75 16.5 2.75ZM16.5 0C10.7277 0 5.5 4.67913 5.5 10.4528C5.5 16.225 10.2699 23.1165 16.5 33C22.7301 23.1165 27.5 16.225 27.5 10.4528C27.5 4.67913 22.2736 0 16.5 0V0ZM16.5 15.125C14.2216 15.125 12.375 13.2784 12.375 11C12.375 8.72163 14.2216 6.875 16.5 6.875C18.7784 6.875 20.625 8.72163 20.625 11C20.625 13.2784 18.7784 15.125 16.5 15.125Z" fill="black" />
+                                        </svg>
+                                    </div>
+                                    <div class="links-info flex flex-col">
+                                        <span class="font-s-medium text-sm text-muted">АДРЕС:</span>
+                                        <span class="font-s-medium text-sm text-muted">г. Москва, ул. Мытная, д.7, стр.1</span>
+                                    </div>
+                                </div>
+                                <!--  Column 5   -->
+                                <div class="social-link-container flex gap-5">
+                                    <div class="link-logo">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_30_18)">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.373 0 0 5.372 0 12C0 17.084 3.163 21.426 7.627 23.174C7.522 22.225 7.427 20.769 7.669 19.733C7.887 18.796 9.076 13.768 9.076 13.768C9.076 13.768 8.717 13.049 8.717 11.986C8.717 10.318 9.684 9.072 10.888 9.072C11.911 9.072 12.406 9.841 12.406 10.762C12.406 11.791 11.751 13.33 11.412 14.757C11.129 15.951 12.011 16.926 13.189 16.926C15.322 16.926 16.961 14.677 16.961 11.431C16.961 8.558 14.897 6.549 11.949 6.549C8.535 6.549 6.531 9.11 6.531 11.756C6.531 12.787 6.928 13.894 7.424 14.494C7.522 14.613 7.536 14.718 7.507 14.839L7.174 16.199C7.121 16.419 7 16.466 6.772 16.36C5.273 15.662 4.336 13.471 4.336 11.711C4.336 7.926 7.086 4.449 12.265 4.449C16.428 4.449 19.663 7.416 19.663 11.38C19.663 15.516 17.056 18.844 13.436 18.844C12.22 18.844 11.077 18.213 10.686 17.466L9.938 20.319C9.667 21.362 8.936 22.669 8.446 23.465C9.57 23.812 10.763 24 12 24C18.627 24 24 18.627 24 12C24 5.372 18.627 0 12 0V0Z" fill="black" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_30_18">
+                                                    <rect width="24" height="24" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="links-info flex flex-col">
+                                        <span class="font-s-medium text-sm text-muted">PINTEREST:</span>
+                                        <span class="font-s-medium text-sm text-muted">www.pinterest.ru/melisova</span>
+                                    </div>
+                                </div>
+                                <!--  Column 6   -->
+                                <div class="social-link-container flex gap-5">
+                                    <div class="link-logo">
+                                        <svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M22 2H15V0H22V2ZM23.726 12C23.284 13.297 21.697 15 18.625 15C15.551 15 13.061 13.271 13.061 9.325C13.061 5.415 15.386 3.405 18.527 3.405C21.609 3.405 23.491 5.187 23.902 7.831C23.98 8.337 24.011 9.019 23.997 9.971H15.97C16.1 13.182 19.453 13.283 20.558 12H23.726ZM16.04 8H21.005C20.9 6.453 19.869 5.781 18.528 5.781C17.062 5.781 16.251 6.549 16.04 8ZM6.466 14.988H0V0.0209999H6.953C12.429 0.102 12.533 5.465 9.673 6.927C13.134 8.187 13.25 14.988 6.466 14.988ZM3 6H6.584C9.092 6 9.49 3 6.272 3H3V6ZM6.391 9H3V12.016H6.341C9.396 12.016 9.209 9 6.391 9Z" fill="black" />
+                                        </svg>
+                                    </div>
+                                    <div class="links-info flex flex-col">
+                                        <span class="font-s-medium text-sm text-muted">BEHANCE:</span>
+                                        <span class="font-s-medium text-sm text-muted">www.behance.net/melisova</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer flex-row-container pb-40">
+        <span class="font-s-medium text-sm text-muted">© 2025  Ekaterina Melisova</span>
+    </footer>
+</div>
 </body>
 </html>
