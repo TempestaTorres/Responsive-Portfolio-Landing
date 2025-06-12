@@ -5,7 +5,9 @@ $(document).ready(function(){
     const next = $('.slider-button.next');
     const statistics = document.querySelector('.statistics');
     const numbers = $('.number');
+    const header = $('.header');
     const form = document.querySelector('#form');
+    const titles = document.querySelectorAll('.title');
 
     let show = true;
 
@@ -44,9 +46,17 @@ $(document).ready(function(){
             },
         },
     });
-    // Spin numbers
+    // Scrolling
     $(window).on('scroll', (e) => {
 
+        // Header
+        if (window.scrollY > 0 && !header.hasClass('is-active')) {
+            header.addClass('is-active');
+        }
+        else if (window.scrollY === 0 && header.hasClass('is-active')) {
+            header.removeClass('is-active');
+        }
+        // Spin numbers
         if (isPartiallyVisible(statistics) && show){
 
             show = false;
@@ -63,6 +73,16 @@ $(document).ready(function(){
             show = true;
         }
 
+        for (let i = 0; i < titles.length; i++) {
+            const title = titles[i];
+
+            if (isPartiallyVisible(title) && !title.classList.contains('active')) {
+                title.classList.add('active');
+            }
+            else if (title.classList.contains('active') && !isPartiallyVisible(title)) {
+                title.classList.remove('active');
+            }
+        }
     });
     // Form
     validateForm(form);

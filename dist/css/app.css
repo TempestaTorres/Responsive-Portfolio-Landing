@@ -1,4 +1,9 @@
 
+.header.is-active {
+    background-color: var(--bg-header);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 2px 0 rgba(12, 12, 12, 0.87);
+}
 .nav {
     margin-left: 1rem;
 }
@@ -6,7 +11,7 @@
     letter-spacing: 0.06em;
 }
 .hv-drop-shadow:hover {
-    filter: drop-shadow(0 0 0.5rem var(--color-primary));
+    filter: drop-shadow(0 0 0.5rem var(--color-hover));
 }
 
 .link {
@@ -171,4 +176,7 @@ button[type="submit"]:hover {
 }
 .social-links-grid {
     row-gap: 60px;
+}
+.title:is(.active) {
+    animation: .6s fadeInUp ease-out;
 }

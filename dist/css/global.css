@@ -24,6 +24,7 @@
     --bg-slider: #f6d5a7;
     --bg-section:  #f0e9d6;
     --bg-card: #faf7f0;
+    --bg-header: rgba(201, 191, 166, 0.8);
 }
 
 .bg-transparent {
@@ -87,7 +88,6 @@
     transition: all .5s ease;
 }
 .hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
-    /*box-shadow: 0 0 8px rgba(72, 59, 26, 0.88);*/
 
     & img {
         transform: scale(1.01);
