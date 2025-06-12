@@ -72,7 +72,7 @@ $(document).ready(function(){
             numbers.css('opacity', '0');
             show = true;
         }
-
+        // Animation
         for (let i = 0; i < titles.length; i++) {
             const title = titles[i];
 
