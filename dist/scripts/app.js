@@ -15,7 +15,7 @@ $(document).ready(function(){
         loop:true,
         items: 1,
         smartSpeed: 600,
-        margin:5,
+        margin:4,
     });
 
     prev.on('click', (e) => {
